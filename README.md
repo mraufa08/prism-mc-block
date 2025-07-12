@@ -117,6 +117,18 @@ To run the powershell script - you made - automatically when you log in to Windo
   - Name: `Your desired task's name`, I would use `Minecraft` as the name
   - Check on **only when user is loggen on**
   - Check on **run with highest privileges**
+  <br />
+  4️⃣ Go to **Triggers** tab
+  - Click on **New**
+  - Begin the task: **At log on**
+  <br />
+  <br />
+  5️⃣ Go to **Actions** tab
+  - Click on New
+  - Action: **Start a program**
+  - Program/script: `powershell.exe`
+  - Add arguments: 
+  6️⃣7️⃣
     
 
 
