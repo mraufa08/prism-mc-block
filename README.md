@@ -137,8 +137,9 @@ To run the powershell script - you made - automatically when you log in to Windo
 
 ---
 ## 📥 Download `.ps1` File
-You can either copy the code from the steps that I explain above, or download here
-[Download File](<your_download_url>)
+- You can either copy the code from the steps that I explain above, or download here
+[Download File](minecraft.ps1)
+- Save on your desired folder, make sure to **Remember it**
 
 ---
 ## 📝 Additional Notes
