@@ -117,19 +117,42 @@ To run the powershell script - you made - automatically when you log in to Windo
   - Name: `Your desired task's name`, I would use `Minecraft` as the name
   - Check on **only when user is loggen on**
   - Check on **run with highest privileges**
-  <br />
-  4️⃣ Go to **Triggers** tab
+    
+4️⃣ Go to **Triggers** tab
   - Click on **New**
   - Begin the task: **At log on**
-  <br />
-  <br />
+
   5️⃣ Go to **Actions** tab
   - Click on New
   - Action: **Start a program**
   - Program/script: `powershell.exe`
-  - Add arguments: 
-  6️⃣7️⃣
-    
+  - Add arguments:
+    ```powershell
+    -ExecutionPolicy Bypass -WindowStyle Hidden -File "C:\"desired directory and folder"\filename.ps1"
+    ```
+6️⃣ Go to **Conditions** Tab <br /> Uncheck all of it
+<br />
+<br />
+7️⃣ Go to **Settings** Tab <br /> Uncheck all, except ✅Allow task to be run on Demand
+<br />
+<br />
+8️⃣ Click **OK**, and The blocker is ready
+
+---
+## 📥Download `.ps1` File
+You can either copy the code from the steps that I explain above, or download here
+[Download File](<your_download_url>)
+
+---
+## 📝Additional Notes
+- The script will not stop Minecraft if you are already playing and then unplug the charger.
+
+- Prism Launcher **is not permanently blocked** — everything is controlled logically through battery status.
+
+- You can stop the script by opening **Task Manager > PowerShell > End Task.**
+
+- Make sure Prism Launcher still uses the process name `prismlauncher`. If it changes, update the script accordingly.
+
 
 
 
