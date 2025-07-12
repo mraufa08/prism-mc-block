@@ -22,8 +22,7 @@ This PowerShell script automatically monitors the Prism Launcher process and:
 ---
 
 ## 🚀 Step-by-Step Guide
-
----
+<br />
 
 ## 🔧 Step One: Install Prism Launcher and Minecraft
 
@@ -48,7 +47,7 @@ Once Prism Launcher is successfully opened:
 
 <br /><br /><br />
 ## 🔐 Step Two: Create the Blocker Script and Task Scheduler
-### 3. Create a Folder for the Script
+### 📂 3. Create a Folder for the Script
 - You can create a folder in a place you desired, **but always remember the directories of the Folder you made**
   ```
   C:\"desired directory and folder"\
@@ -58,7 +57,7 @@ Once Prism Launcher is successfully opened:
   %localappdata%\Programs\PrismLauncher
   ```
 
-### 4. Create the Powershell `.ps1` File
+### 🐚 4. Create the Powershell `.ps1` File
 - Create a powershell file, whether you can use vscode, or even notepad to make it.
 - Paste this script to your file
   ```powershell
@@ -101,15 +100,14 @@ Once Prism Launcher is successfully opened:
   %localappdata%\Programs\PrismLauncher\hehe.ps1
   ```
 
-### 5. Now, it is the time to make the blocker using Task Scheduler
+### 🚫 5. Now, it is the time to make the blocker using Task Scheduler
 To run the powershell script - you made - automatically when you log in to Windows: 
-<br />
-<br />
-  1️⃣ Open **Task Scheduler** by
-    - press Start Menu, search for "Task Scheduler"
-    - press Win + R, type **taskschd.msc**
 
-  2️⃣ Click on **File > Create Task** in the top left
+  1️⃣ Open **Task Scheduler** by
+  - press Start Menu, search for "Task Scheduler"
+  - press Win + R, type **taskschd.msc**
+
+  2️⃣ Click on **File > Create Task** in the top left corner
   <br />
   <br />
   3️⃣ Now, you will see on **General** tab
@@ -138,12 +136,12 @@ To run the powershell script - you made - automatically when you log in to Windo
 8️⃣ Click **OK**, and The blocker is ready
 
 ---
-## 📥Download `.ps1` File
+## 📥 Download `.ps1` File
 You can either copy the code from the steps that I explain above, or download here
 [Download File](<your_download_url>)
 
 ---
-## 📝Additional Notes
+## 📝 Additional Notes
 - The script will not stop Minecraft if you are already playing and then unplug the charger.
 
 - Prism Launcher **is not permanently blocked** — everything is controlled logically through battery status.
