@@ -108,8 +108,7 @@ To run the powershell script - you made - automatically when you log in to Windo
   1️⃣ Open **Task Scheduler** by
     - press Start Menu, search for "Task Scheduler"
     - press Win + R, type **taskschd.msc**
-  <br />
-  <br />
+
   2️⃣ Click on **File > Create Task** in the top left
   <br />
   <br />
