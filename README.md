@@ -61,20 +61,20 @@ Once Prism Launcher is successfully opened:
 - Create a powershell file, whether you can use vscode, or even notepad to make it.
 - Paste this script to your file
   ```powershell
-  # Nama proses Prism Launcher
+  # Nama proses PrismLauncher
   $processName = "prismlauncher"
 
   while ($true) {
     Start-Sleep -Seconds 5
 
-    # Cek apakah Prism Launcher sedang jalan
+    # Cek apakah PrismLauncher sedang jalan
     $process = Get-Process -Name $processName -ErrorAction SilentlyContinue
     if ($process) {
         $battery = Get-WmiObject -Class Win32_Battery
         $chargingStatus = $battery.BatteryStatus
         $chargePercentage = $battery.EstimatedChargeRemaining
 
-        # Tidak charging ➔ stop + notifikasi
+        # Tidak charging -> stop
         if (($chargingStatus -eq 1) -or ($chargingStatus -eq 3)) {
             Stop-Process -Name $processName -Force
         }
@@ -86,7 +86,7 @@ Once Prism Launcher is successfully opened:
 
         # Charging dan >= 95% 
         elseif ($chargePercentage -ge 95) {
-            Start-Sleep -Seconds 2 # beri jeda 2 detik untuk open prism
+            Start-Sleep -Seconds 2 # beri jeda 2 detik untuk open prismlauncher
         }
       } 
     } 
